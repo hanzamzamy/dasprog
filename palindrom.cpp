@@ -14,7 +14,7 @@
 #define IS_ALPHANUM(c) (IS_ALPHA(c) || IS_NUM(c))
 
 using namespace std;
-// Enumerasi set karakter yang akan digunakna sebagai mode
+// Enumerasi set karakter yang akan digunakan sebagai mode
 // palindrom. Bisa alfabetik, numerik, maupun alfanumerik.
 enum charSet{ALPHABETICAL, NUMERICAL, ALPHANUMERICAL};
 // Variabel kerja.
