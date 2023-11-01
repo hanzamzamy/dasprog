@@ -28,7 +28,7 @@ int mode = ALPHANUMERICAL;
 // - cSens <bool>: Apakah pemeriksaan case-sensitive? Default: false.
 // Return value
 // - true <bool>: Jika teks sama ketika dibaca maju maupun mundur.
-// - false <bool>: Jika teks kosong atau tidak memenuhi kriteria true.
+// - false <bool>: Jika teks kosong, di luar set karakter, atau tidak memenuhi kriteria true.
 bool palindrom(string txt, int cSet = ALPHANUMERICAL, bool cSens = false){
     // Iterasi untuk setiap karakter di txt. Hanya ambil karakter yang sesuai
     // dengan set karakter dan simpan di filtered. Abaikan karakter lainnya.
