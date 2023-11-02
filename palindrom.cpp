@@ -48,7 +48,7 @@ bool palindrom(string txt, int cSet = ALPHANUMERICAL, bool cSens = false){
             i = tolower(i);
     // Periksa palidrom dari teks yang sudah disaring. Jika semua karakter
     // tersaring, kembalikan false. Iterasi karakter mulai dari ujung (awal & akhir)
-    // hingga ke tengah. Jika ketika pemeriksaan sepasang karakter tidak sama,
+    // hingga ke tengah. Jika saat pemeriksaan sepasang karakter tidak sama,
     // kembalikan false. Jika semua karakter melewati pemeriksaan, kambalikan true.
     if(filtered.empty()) return false;
     for(int start = 0, end = filtered.length() - 1;start < end; start++, end--)
