@@ -19,6 +19,13 @@ using namespace std;
 enum charSet{ALPHABETICAL, NUMERICAL, ALPHANUMERICAL};
 // Variabel kerja.
 string text;
+// Mode yang bisa digunakan:
+// - (0) ALPHABETICAL <enum>: Hanya periksa karakter alfabet.
+// - (1) NUMERICAL <enum>: Hanya periksa karakter angka.
+// - (2) ALPHANUMERICAL <enum>: Hanya periksa karakter alfabet dan angka.
+// Di luar enumerasi yang ada, seluruh karakter diperiksa.
+// Bisa menggunakan kode integer (lihat dalam kurung). Nilai selain 0..2,
+// dianggap mode lainnya (seluruh karakter diperiksa).
 int mode = ALPHANUMERICAL;
 
 // Fungsi untuk menentukan palindrom dari sebuah teks.
@@ -64,7 +71,9 @@ int main(){
     cout << "Teks " << "\"" << text << "\" "
          << ((palindrom(text, mode)) ? "palindrom" : "bukan palidrom")
          << " secara " << ((mode == ALPHABETICAL) ? "alfabetik" :
-                           (mode == NUMERICAL) ? "numerik" : "alfanumerik") << ".";
+                           (mode == NUMERICAL) ? "numerik" : 
+                           (mode == ALPHANUMERICAL) ? "alfanumerik" : 
+                           "keseluruhan") << ".";
 
     return 0;
 }
