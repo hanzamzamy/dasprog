@@ -62,7 +62,7 @@ int main(){
     getline(cin, text);
     // Proses & Output.
     cout << "Teks " << "\"" << text << "\" "
-         << ((palindrom(text, mode)) ? "palidrom" : "bukan palidrom")
+         << ((palindrom(text, mode)) ? "palindrom" : "bukan palidrom")
          << " secara " << ((mode == ALPHABETICAL) ? "alfabetik" :
                            (mode == NUMERICAL) ? "numerik" : "alfanumerik") << ".";
 
