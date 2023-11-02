@@ -63,13 +63,14 @@ bool palindrom(string txt, int cSet = ALPHANUMERICAL, bool cSens = false){
     return true;
 }
 
+// Fungsi utama program.
 int main(){
     // Input.
     cout << "Masukan teks:" << endl;
     getline(cin, text);
     // Proses & Output.
     cout << "Teks " << "\"" << text << "\" "
-         << ((palindrom(text, mode)) ? "palindrom" : "bukan palidrom")
+         << ((palindrom(text, mode)) ? "palindrom" : "bukan palindrom")
          << " secara " << ((mode == ALPHABETICAL) ? "alfabetik" :
                            (mode == NUMERICAL) ? "numerik" : 
                            (mode == ALPHANUMERICAL) ? "alfanumerik" : 
